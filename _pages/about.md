@@ -10,7 +10,7 @@ profile:
   
 news: true
 social: true
-#publications: true
+publications: false
 #projects: true
 ---
 
