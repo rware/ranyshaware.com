@@ -7,8 +7,8 @@ description: > # this means to ignore newlines until "url:"
    Ranysha Ware's homepage
 footer_text: # none
   
-url:  # the base hostname & protocol for your site
-baseurl: /rware # the subpath of your site, e.g. /blog/
+url: https://www.cs.cmu.edu/~rware  # the base hostname & protocol for your site
+baseurl:  # the subpath of your site, e.g. /blog/
 last_updated: July 2018 # leave blank if you don't want to display last updated
 
 # -----------------------------------------------------------------------------
