@@ -1,0 +1,6 @@
+
+all:
+	rm -rf ../www
+	cp -r _site ../www
+	cd .. && find www | xargs -I {} fs sa /afs/cs.cmu.edu/user/rware/{} wwwsrv:http-ftp rl
+

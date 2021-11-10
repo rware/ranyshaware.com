@@ -1,0 +1,66 @@
+
+@inproceedings{ware-hotnets-2019,
+ author = {Ware, Ranysha and Mukerjee, Matthew K. and Seshan, Srinivasan and Sherry, Justine},
+ title = {Beyond Jain’s Fairness Index: Setting the Bar For The Deployment of Congestion Control Algorithms},
+ booktitle = {Proceedings of the 18th ACM Workshop on Hot Topics in Networks},
+ series = {HotNets '19},
+ year = {2019},
+ %isbn = {978-1-4503-6120-0},
+ location = {Princeton, NJ, USA},
+ %pages = {1--7},
+ %numpages = {7},
+ %url = {http://doi.acm.org/10.1145/3286062.3286063},
+ %doi = {10.1145/3365609.3365855},
+ %acmid = {3286063},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ pdf = {ware-hotnets19.pdf},
+ slides = {ware-hotnets2019-slides.pdf},
+ video = {https://www.youtube.com/watch?v=lp-0An30JoQ},
+ abstract = {The Internet community faces an explosion in new congestion control algorithms
+ such as Copa, Sprout, PCC, and BBR. In this paper, we discuss considerations for deploying
+ new algorithms on the Internet. While past efforts have focused on achieving ‘fairness’ or
+ ‘friendliness’ between new algorithms and deployed algorithms, we instead advocate for an
+ approach centered on quantifying and limiting harm caused by the new algorithm on the status quo.
+ We argue that a harm-based approach is more practical, more future proof, and handles a wider
+ range of quality metrics than traditional notions of fairness and friendliness.}
+}
+
+@inproceedings{ware-imc-2019,
+ author = {Ware, Ranysha and Mukerjee, Matthew K. and Seshan, Srinivasan and Sherry, Justine},
+ title = {Modeling BBR's Interactions with Loss-Based Congestion Control},
+ booktitle = {Proceedings of the Internet Measurement Conference},
+ series = {IMC '19},
+ year = {2019},
+ isbn = {978-1-4503-6948-0},
+ location = {Amsterdam, Netherlands},
+ pages = {137--143},
+ numpages = {7},
+ url = {http://doi.acm.org/10.1145/3355369.3355604},
+ doi = {10.1145/3355369.3355604},
+ acmid = {3355604},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ pdf = {ware-imc2019.pdf},
+ slides = {ware-imc2019-slides.pdf},
+ video = {https://vimeo.com/showcase/6531379/video/369121357#t=999s},
+ abstract = {BBR is a new congestion control algorithm (CCA) deployed for Chromium
+ QUIC and the Linux kernel. As the default CCA for YouTube (which
+ commands 11+% of Internet traffic), BBR has rapidly become a major
+ player in Internet congestion control. BBR’s fairness or friendliness to
+ other connections has recently come under scrutiny as measurements
+ from multiple research groups have shown undesirable outcomes when
+ BBR competes with traditional CCAs. One such outcome is a fixed,
+ 40% proportion of link capacity consumed by a single BBR flow when
+ competing with as many as 16 loss-based algorithms like Cubic or
+ Reno. In this short paper, we provide the first model capturing BBR’s
+ behavior in competition with loss-based CCAs. Our model is coupled
+ with practical experiments to validate its implications. The key
+ lesson is this: under competition, BBR becomes window-limited by its
+ ‘inflight cap’ which then determines BBR’s bandwidth consumption.
+ By modeling the value of BBR’s in-flight cap under varying network
+ conditions, we can predict BBR’s throughput when competing against
+ Cubic flows with a median error of 5%, and against Reno with amedian of 8%.}
+}
+
+

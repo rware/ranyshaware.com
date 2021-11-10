@@ -1,0 +1,7 @@
+---
+layout: post
+date: 2019-10-21 20:22:00-0400
+inline: true
+---
+
+I presented our paper [Modeling BBR’s Interactions with Loss-Based Congestion Control](https://dl.acm.org/authorize?N695087) at IMC 2019. Watch the video [here](https://vimeo.com/showcase/6531379/video/369121357#t=999s). 

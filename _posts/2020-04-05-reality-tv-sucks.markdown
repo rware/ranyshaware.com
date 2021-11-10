@@ -1,0 +1,19 @@
+---
+layout: post
+title: Reality TV Is Trash, But...
+date: 2020-04-05 19:31:00-0400
+description: reality tv from my perspective
+comments: true
+---
+
+Reality TV is trash, but I love it.
+
+Thanks to the COVID-19 and a series of unfortunate events, I'm currently hanging with my parents in a tiny town in upstate NY instead of pretending to work back in Pittsburgh in an apartment all alone.
+
+My parents are avid TLC watchers. I have never watched a show on TLC before, but have of course as a scholar of the Internet and Twitter addict, watched the reactions to these clearly wonderful shows. Nothing seems to illicit more of a strong response from one of my favorite people I follow: [@crissles](https://twitter.com/crissles), than 90 Day Fiance. Yet, I've never taken it upon myself to change the channel to TLC and give this clearly popular show a chance.
+
+Fast forward to tonight. I sit here in my Dad's recliner, in my robe with a blanket, popcorn and soda completely engrossed. A Nigerian man complains about his white lady partner constant white lady complaining. In another scene, a man who mysteriously has no neck massages the feet of a woman he forced to put on a robe. After a commerical break a man with wide eyes, gets in a car and is off to Nigeria. Sorry no, I mean Siberia, whoops. Anywho, I could go on, but I'll stop there since clearly all this TV is melting my precious brain.
+
+Plus, the way my brain is setup, I need to focus while the show is on so that's all I'll say for now.
+
+This has been the smooth sounds of Ray FM. Thanks for coming to my Tedx talk? I wonder if I can add "bad reviews of reality TV shows" to my CV. Comments are welcome.

@@ -55,7 +55,7 @@
 
   <span class="links">
   {% if entry.abstract %}
-    [<a class="abstract">Abs</a>]
+    [<a class="abstract">Abstract</a>]
   {% endif %}
   {% if entry.arxiv %}
     [<a href="http://arxiv.org/abs/{{ entry.arxiv }}" target="_blank">arXiv</a>]
@@ -77,6 +77,9 @@
   {% endif %}
   {% if entry.code %}
     [<a href="{{ entry.code }}" target="_blank">Code</a>]
+  {% endif %}
+  {% if entry.video %}
+    [<a href="{{ entry.video }}" target="_blank">Video</a>]
   {% endif %}
   </span>
 
