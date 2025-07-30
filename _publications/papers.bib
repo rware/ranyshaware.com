@@ -1,3 +1,66 @@
+@techreport{ware-thesis,
+  title        = {PhD Thesis: Battle for Bandwidth: On The Deployability of New Congestion Control Algorithms},
+  year         = {2024},
+  month        = {August},
+  address      = {Pittsburgh, PA},
+  url         = {https://reports-archive.adm.cs.cmu.edu/anon/2024/CMU-CS-24-135.pdf},
+  institution       = {Carnegie Mellon University},
+  pdf =  {CMU-CS-24-135.pdf}
+}
+
+@inproceedings{ferreira-imc-2024,
+author = {Ferreira, Margarida and Ware, Ranysha and Kothari, Yash and Lynce, In\^{e}s and Martins, Ruben and Narayan, Akshay and Sherry, Justine},
+title = {Reverse-Engineering Congestion Control Algorithm Behavior},
+year = {2024},
+isbn = {9798400705922},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3646547.3688443},
+doi = {10.1145/3646547.3688443},
+abstract = {The rise of proprietary and novel congestion control algorithms (CCAs) opens questions about the future of Internet utilization, latency, and fairness. However, fully analyzing how novel CCAs impact these properties requires understanding the inner workings of these algorithms. We thus aim to reverse-engineer deployed CCAs' behavior from collected packet traces to facilitate analyzing them. We present Abagnale, a program synthesis pipeline that helps users automate the reverse-engineering task. Using Abagnale, we discover simple expressions capturing the behavior of 9 of the 16 CCAs distributed with the Linux kernel and analyze 7 CCAs from a graduate networking course.},
+booktitle = {Proceedings of the 2024 ACM on Internet Measurement Conference},
+pages = {401–414},
+numpages = {14},
+location = {Madrid, Spain},
+series = {IMC '24},
+pdf = {ferreira-imc-2024.pdf}
+}
+
+@inproceedings{ware-sigcomm-2024,
+author = {Ranysha Ware and Adithya Abraham Philip and Nicholas Hungria and Yash Kothari and Justine Sherry and Srinivasan Seshan},
+title = { CCAnalyzer: An Efficient and
+Nearly-Passive Congestion Control Classifier},
+year = {2024},
+isbn = {979-8-4007-0614-1/24/08},
+publisher = {Association for Computing Machinery},
+address = {Sydney, NSW, Australia},
+url = {https://doi.org/10.1145/3651890.3672255},
+doi = {10.1145/3651890.3672255},
+booktitle = {Proceedings of the ACM SIGCOMM 2024 Conference},
+numpages = {12},
+keywords = {congestion control, network measurement},
+location = {Sydney, NSW, Australia},
+series = {SIGCOMM '24},
+pdf = {ware-sigcomm24.pdf},
+abstract = {We present CCAnalyzer, a novel classifier for deployed Internet congestion control algorithms (CCAs) which is more accurate, more generalizable, and more human-interpretable than prior classifiers. CCAnalyzer requires no knowledge of the underlying CCA algorithms, and it can identify when a CCA is novel - i.e. not in the training set. Furthermore, CCAnalyzer can cluster together servers it believes use the same novel/unknown algorithm. CCAnalyzer correctly identifies all 15 of the default Internet CCAs deployed with Linux, including BBRv1, which no existing classifier can do. Finally, CCAnalyzer can classify server CCAs while being as efficient or better than prior approaches in terms of bytes transferred and runtime. We conduct a measurement study using CCAnalyzer measuring the CCA for 5000+ websites. We find widespread deployment of BBRv1 at large CDNs, and demonstrate how our clustering technique can detect deployments of new algorithms as it discovers BBRv3 although BBRv3 is not in its training set.}
+}
+
+@inproceedings{philip-sigcomm-2024,
+author = {Adithya Abraham Philip and Rukshani Athapathu and Ranysha Ware and Fabian Francis Mkocheko and Alexis Schlomer and Mengrou Shou and Zili Meng and Srinivasan Seshan and Justine Sherry},
+title = {Prudentia: Findings of an Internet Fairness Watchdog},
+year = {2024},
+isbn = {979-8-4007-0614-1/24/08},
+publisher = {Association for Computing Machinery},
+address = {Sydney, NSW, Australia},
+booktitle = {Proceedings of the ACM SIGCOMM 2024 Conference},
+numpages = {12},
+keywords = {congestion control, network measurement},
+location = {Sydney, NSW, Australia},
+series = {SIGCOMM '24},
+pdf = {philip-sigcomm24.pdf},
+abstract = {With the rise of heterogeneous congestion control algorithms and increasingly complex application control loops (e.g. adaptive bitrate algorithms), the Internet community has expressed growing concern that network bandwidth allocations are unfairly skewed, and that some Internet services are 'winners' at the expense of 'losing' services when competing over shared bottlenecks. In this paper, we provide the first study of fairness between live, end-to-end services with distinct workloads. Rather than focusing on individual components of an application stack (e.g., studying the fairness of an individual congestion control algorithm), we want to provide a direct study over real-world deployed applications. Among our findings, we observe that services typically achieve less-than-fair outcomes: on average, the 'losing' service achieves only 72\% of its max-min fair share of link bandwidth. We also find that some services are significantly more contentious than others: for example, one popular file distribution service causes competing applications to obtain as low as 16\% of their max-min fair share of bandwidth when competing in a moderately-constrained setting.}
+}
+
 @inproceedings{philip-imc-2021,
 author = {Philip, Adithya Abraham and Ware, Ranysha and Athapathu, Rukshani and Sherry, Justine and Sekar, Vyas},
 title = {Revisiting TCP Congestion Control Throughput Models \& Fairness Properties at Scale},
