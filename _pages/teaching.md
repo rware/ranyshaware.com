@@ -1,7 +1,7 @@
 ---
 layout: page
-title: teaching
 permalink: /teaching/
+title: teaching
 ---
 
 Here is a list of courses I have taught or served as a teaching assistant for.
