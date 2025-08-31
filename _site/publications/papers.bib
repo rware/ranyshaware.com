@@ -1,0 +1,148 @@
+@techreport{ware-thesis,
+  title        = {PhD Thesis: Battle for Bandwidth: On The Deployability of New Congestion Control Algorithms},
+  year         = {2024},
+  month        = {August},
+  address      = {Pittsburgh, PA},
+  url         = {https://reports-archive.adm.cs.cmu.edu/anon/2024/CMU-CS-24-135.pdf},
+  institution       = {Carnegie Mellon University},
+  pdf =  {CMU-CS-24-135.pdf}
+}
+
+@inproceedings{ferreira-imc-2024,
+author = {Ferreira, Margarida and Ware, Ranysha and Kothari, Yash and Lynce, In\^{e}s and Martins, Ruben and Narayan, Akshay and Sherry, Justine},
+title = {Reverse-Engineering Congestion Control Algorithm Behavior},
+year = {2024},
+isbn = {9798400705922},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3646547.3688443},
+doi = {10.1145/3646547.3688443},
+abstract = {The rise of proprietary and novel congestion control algorithms (CCAs) opens questions about the future of Internet utilization, latency, and fairness. However, fully analyzing how novel CCAs impact these properties requires understanding the inner workings of these algorithms. We thus aim to reverse-engineer deployed CCAs' behavior from collected packet traces to facilitate analyzing them. We present Abagnale, a program synthesis pipeline that helps users automate the reverse-engineering task. Using Abagnale, we discover simple expressions capturing the behavior of 9 of the 16 CCAs distributed with the Linux kernel and analyze 7 CCAs from a graduate networking course.},
+booktitle = {Proceedings of the 2024 ACM on Internet Measurement Conference},
+pages = {401–414},
+numpages = {14},
+location = {Madrid, Spain},
+series = {IMC '24},
+pdf = {ferreira-imc-2024.pdf}
+}
+
+@inproceedings{ware-sigcomm-2024,
+author = {Ranysha Ware and Adithya Abraham Philip and Nicholas Hungria and Yash Kothari and Justine Sherry and Srinivasan Seshan},
+title = { CCAnalyzer: An Efficient and
+Nearly-Passive Congestion Control Classifier},
+year = {2024},
+isbn = {979-8-4007-0614-1/24/08},
+publisher = {Association for Computing Machinery},
+address = {Sydney, NSW, Australia},
+url = {https://doi.org/10.1145/3651890.3672255},
+doi = {10.1145/3651890.3672255},
+booktitle = {Proceedings of the ACM SIGCOMM 2024 Conference},
+numpages = {12},
+keywords = {congestion control, network measurement},
+location = {Sydney, NSW, Australia},
+series = {SIGCOMM '24},
+pdf = {ware-sigcomm24.pdf},
+abstract = {We present CCAnalyzer, a novel classifier for deployed Internet congestion control algorithms (CCAs) which is more accurate, more generalizable, and more human-interpretable than prior classifiers. CCAnalyzer requires no knowledge of the underlying CCA algorithms, and it can identify when a CCA is novel - i.e. not in the training set. Furthermore, CCAnalyzer can cluster together servers it believes use the same novel/unknown algorithm. CCAnalyzer correctly identifies all 15 of the default Internet CCAs deployed with Linux, including BBRv1, which no existing classifier can do. Finally, CCAnalyzer can classify server CCAs while being as efficient or better than prior approaches in terms of bytes transferred and runtime. We conduct a measurement study using CCAnalyzer measuring the CCA for 5000+ websites. We find widespread deployment of BBRv1 at large CDNs, and demonstrate how our clustering technique can detect deployments of new algorithms as it discovers BBRv3 although BBRv3 is not in its training set.}
+}
+
+@inproceedings{philip-sigcomm-2024,
+author = {Adithya Abraham Philip and Rukshani Athapathu and Ranysha Ware and Fabian Francis Mkocheko and Alexis Schlomer and Mengrou Shou and Zili Meng and Srinivasan Seshan and Justine Sherry},
+title = {Prudentia: Findings of an Internet Fairness Watchdog},
+year = {2024},
+isbn = {979-8-4007-0614-1/24/08},
+publisher = {Association for Computing Machinery},
+address = {Sydney, NSW, Australia},
+booktitle = {Proceedings of the ACM SIGCOMM 2024 Conference},
+numpages = {12},
+keywords = {congestion control, network measurement},
+location = {Sydney, NSW, Australia},
+series = {SIGCOMM '24},
+pdf = {philip-sigcomm24.pdf},
+abstract = {With the rise of heterogeneous congestion control algorithms and increasingly complex application control loops (e.g. adaptive bitrate algorithms), the Internet community has expressed growing concern that network bandwidth allocations are unfairly skewed, and that some Internet services are 'winners' at the expense of 'losing' services when competing over shared bottlenecks. In this paper, we provide the first study of fairness between live, end-to-end services with distinct workloads. Rather than focusing on individual components of an application stack (e.g., studying the fairness of an individual congestion control algorithm), we want to provide a direct study over real-world deployed applications. Among our findings, we observe that services typically achieve less-than-fair outcomes: on average, the 'losing' service achieves only 72\% of its max-min fair share of link bandwidth. We also find that some services are significantly more contentious than others: for example, one popular file distribution service causes competing applications to obtain as low as 16\% of their max-min fair share of bandwidth when competing in a moderately-constrained setting.}
+}
+
+@inproceedings{philip-imc-2021,
+author = {Philip, Adithya Abraham and Ware, Ranysha and Athapathu, Rukshani and Sherry, Justine and Sekar, Vyas},
+title = {Revisiting TCP Congestion Control Throughput Models \& Fairness Properties at Scale},
+year = {2021},
+isbn = {9781450391290},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3487552.3487834},
+doi = {10.1145/3487552.3487834},
+abstract = {Much of our understanding of congestion control algorithm (CCA) throughput and fairness is derived from models and measurements that (implicitly) assume congestion occurs in the last mile. That is, these studies evaluated CCAs in "small scale" edge settings at the scale of tens of flows and up to a few hundred Mbps bandwidths. However, recent measurements show that congestion can also occur at the core of the Internet on inter-provider links, where thousands of flows share high bandwidth links. Hence, a natural question is: Does our understanding of CCA throughput and fairness continue to hold at the scale found in the core of the Internet, with 1000s of flows and Gbps bandwidths?Our preliminary experimental study finds that some expectations derived in the edge setting do not hold at scale. For example, using loss rate as a parameter to the Mathis model to estimate TCP NewReno throughput works well in edge settings, but does not provide accurate throughput estimates when thousands of flows compete at high bandwidths. In addition, BBR - which achieves good fairness at the edge when competing solely with other BBR flows - can become very unfair to other BBR flows at the scale of the core of the Internet. In this paper, we discuss these results and others, as well as key implications for future CCA analysis and evaluation.},
+booktitle = {Proceedings of the 21st ACM Internet Measurement Conference},
+pages = {96–103},
+numpages = {8},
+keywords = {BBR, fairness, throughput, computer networks, RENO, congestion control, TCP, cubic},
+location = {Virtual Event},
+series = {IMC '21},
+pdf = {philip-imc21.pdf},
+abstract = {Much of our understanding of congestion control algorithm (CCA) throughput and fairness is derived from models and measurements that (implicitly) assume congestion occurs in the last mile. That is, these studies evaluated CCAs in "small scale" edge settings at the scale of tens of flows and up to a few hundred Mbps bandwidths. However, recent measurements show that congestion can also occur at the core of the Internet on inter-provider links, where thousands of flows share high bandwidth links. Hence, a natural question is: Does our understanding of CCA throughput and fairness continue to hold at the scale found in the core of the Internet, with 1000s of flows and Gbps bandwidths? Our preliminary experimental study finds that some expectations derived in the edge setting do not hold at scale. For example, using loss rate as a parameter to the Mathis model to estimate TCP NewReno throughput works well in edge settings, but does not provide accurate throughput estimates when thousands of flows compete at high bandwidths. In addition, BBR - which achieves good fairness at the edge when competing solely with other BBR flows - can become very unfair to other BBR flows at the scale of the core of the Internet. In this paper, we discuss these results and others, as well as key implications for future CCA analysis and evaluation.}
+}
+
+@inproceedings{ware-hotnets-2019,
+ author = {Ware, Ranysha and Mukerjee, Matthew K. and Seshan, Srinivasan and Sherry, Justine},
+ title = {Beyond Jain’s Fairness Index: Setting the Bar For The Deployment of Congestion Control Algorithms},
+ booktitle = {Proceedings of the 18th ACM Workshop on Hot Topics in Networks},
+ series = {HotNets '19},
+ year = {2019},
+ %isbn = {978-1-4503-6120-0},
+ location = {Princeton, NJ, USA},
+ %pages = {1--7},
+ %numpages = {7},
+ %url = {http://doi.acm.org/10.1145/3286062.3286063},
+ %doi = {10.1145/3365609.3365855},
+ %acmid = {3286063},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ pdf = {ware-hotnets19.pdf},
+ slides = {ware-hotnets2019-slides.pdf},
+ video = {https://www.youtube.com/watch?v=lp-0An30JoQ},
+ abstract = {The Internet community faces an explosion in new congestion control algorithms
+ such as Copa, Sprout, PCC, and BBR. In this paper, we discuss considerations for deploying
+ new algorithms on the Internet. While past efforts have focused on achieving ‘fairness’ or
+ ‘friendliness’ between new algorithms and deployed algorithms, we instead advocate for an
+ approach centered on quantifying and limiting harm caused by the new algorithm on the status quo.
+ We argue that a harm-based approach is more practical, more future proof, and handles a wider
+ range of quality metrics than traditional notions of fairness and friendliness.}
+}
+
+@inproceedings{ware-imc-2019,
+ author = {Ware, Ranysha and Mukerjee, Matthew K. and Seshan, Srinivasan and Sherry, Justine},
+ title = {Modeling BBR's Interactions with Loss-Based Congestion Control},
+ booktitle = {Proceedings of the Internet Measurement Conference},
+ series = {IMC '19},
+ year = {2019},
+ isbn = {978-1-4503-6948-0},
+ location = {Amsterdam, Netherlands},
+ pages = {137--143},
+ numpages = {7},
+ url = {http://doi.acm.org/10.1145/3355369.3355604},
+ doi = {10.1145/3355369.3355604},
+ acmid = {3355604},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ pdf = {ware-imc2019.pdf},
+ slides = {ware-imc2019-slides.pdf},
+ video = {https://vimeo.com/showcase/6531379/video/369121357#t=999s},
+ abstract = {BBR is a new congestion control algorithm (CCA) deployed for Chromium
+ QUIC and the Linux kernel. As the default CCA for YouTube (which
+ commands 11+% of Internet traffic), BBR has rapidly become a major
+ player in Internet congestion control. BBR’s fairness or friendliness to
+ other connections has recently come under scrutiny as measurements
+ from multiple research groups have shown undesirable outcomes when
+ BBR competes with traditional CCAs. One such outcome is a fixed,
+ 40% proportion of link capacity consumed by a single BBR flow when
+ competing with as many as 16 loss-based algorithms like Cubic or
+ Reno. In this short paper, we provide the first model capturing BBR’s
+ behavior in competition with loss-based CCAs. Our model is coupled
+ with practical experiments to validate its implications. The key
+ lesson is this: under competition, BBR becomes window-limited by its
+ ‘inflight cap’ which then determines BBR’s bandwidth consumption.
+ By modeling the value of BBR’s in-flight cap under varying network
+ conditions, we can predict BBR’s throughput when competing against
+ Cubic flows with a median error of 5%, and against Reno with amedian of 8%.}
+}
+
+
