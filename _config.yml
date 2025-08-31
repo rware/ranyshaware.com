@@ -2,7 +2,7 @@
 # Site settings
 # -----------------------------------------------------------------------------
 name: Ranysha Ware
-email: rware@cs.cmu.edu
+email: rware@cs.swarthmore.edu
 description: > # this means to ignore newlines until "url:"
    Ranysha Ware's homepage
 footer_text: # none
@@ -65,6 +65,11 @@ collections:
       layout: post
     output: true
     permalink: /publications/:path
+  teaching:
+    defaults:
+      layout: post
+    output: true
+    permalink: /teaching/:path
 
 news_limit: 5
 
