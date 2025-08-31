@@ -4,8 +4,6 @@ permalink: /teaching/
 title: teaching
 ---
 
-Here is a list of courses I have taught or served as a teaching assistant for.
-
 <div class="news">
   {% for course in site.teaching reversed %}
     <div class="course-item" style="margin-bottom: 2em;">

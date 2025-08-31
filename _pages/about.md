@@ -1,8 +1,8 @@
 ---
 layout: about
 permalink: /
-title: <strong>Ranysha Ware</strong> 
-description: <a href="https://www.cmu.edu">Swarthmore College</a>. Teaching the youth.
+title: <strong>Dr. Ranysha Ware</strong> 
+description: <a href="https://www.cs.swarthmore.edu">Swarthmore College</a>. Teaching the youth.
 
 profile:
   align: left

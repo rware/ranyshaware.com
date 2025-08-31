@@ -25,11 +25,547 @@
 
   <header class="post-header">
     <h1 class="post-title">publications</h1>
-    <h5 class="post-description">Publications by categories in reversed chronological order.</h5>
+    <h5 class="post-description"></h5>
   </header>
 
   <article class="post-content publications clearfix">
     
+<h3 class="year">2025</h3>
+<ol class="bibliography"><li>
+
+<div id="sherry-tprc-2025">
+  
+    <span class="title">Congestion Safety Audits for Internet Services</span>
+    <span class="author">
+      
+        
+          
+            
+              Sherry, Justine,
+            
+          
+        
+      
+        
+          
+            <em>Ware, Ranysha</em>,
+          
+        
+      
+        
+          
+            
+              Suizo, Isabel,
+            
+          
+        
+      
+        
+          
+            
+              Seshan, Srinivasan,
+            
+          
+        
+      
+        
+          and
+          
+            
+              Philip, Adithya Abraham
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+    
+      2025
+    
+    </span>
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abstract</a>]
+  
+  
+  
+  
+    [<a href="https://www.cs.cmu.edu//~rware/assets/pdf/ssrn-5383658.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>When two family members sharing a home Internet connection simultaneously log in to their
+online applications of choice, how well do their services perform? Will one videogaming child
+experience timeouts and stalls because their sibling is also streaming a popular TV show? Will a
+teleconferencing mother have her calls drop because her spouse chooses just this moment to install
+a software update? When multiple Internet users share a bottleneck network link and overload
+it, the link is said to become congested. Bandwidth – the volume of data that can be transmitted
+per second – must be shared between users. If the link is overloaded, then latency – the amount of
+time it takes one bit of information to travel from sender to receiver – will increase, and packets
+of data can be dropped entirely by the network.
+Most Internet service providers do little to police the impact of congestion between users, simply forwarding packets in the order that they arrive, “first come, first serve.” This policy leaves
+the responsibility of mitigating the effects of congestion to the senders themselves. Internet applications use algorithms called Congestion Control Algorithms (CCAs) to carefully speed up
+and slow down their transmission to avoid congestion. CCAs aim to share available bandwidth
+equally between connections, keep latencies low, and avoid packet loss. Unfortunately, recent research shows that the success of applications in equitably mitigating congestion is mixed at best.
+In a recent study of widely deployed services, it was found that one file-distribution application
+consumed well over its fair share of bandwidth, causing other concurrently running applications
+to obtain as little as 16% of their fair share of bandwidth. In the same study, it was found that a
+popular video streaming service could lead to stalls for competing teleconferencing applications
+(even though other video streaming services did not cause this problem).
+In this paper, we explore how to evaluate whether Internet applications are friendly or fair to
+other applications sharing the same bottleneck link. Taking inspiration from the security community, we propose congestion safety audits, a methodology for analyzing an Internet service
+to identify common-case pitfalls in congested environments. Much like it is impossible to prove
+that an Internet application is “definitely secure”, there exists no approach to guarantee that an
+application will always share bandwidth with other applications or never lead to packet loss or
+stalls for competing traffic. Security audits allow inspectors to perform a suite of tests and evaluations to ensure that due diligence has been carried out to attempt to secure an application. We
+propose that service operators can similarly use a standardized suite of tests to verify that their
+applications meet common-sense guidelines for performance under competition.
+With a standardized process for congestion safety auditing, companies can evaluate their own
+1
+applications to avoid bad publicity. Or, in a world in which regulators take an interest in behavior
+under competition, congestion safety audits might provide validation that operators have followed
+due diligence in avoiding overly aggressive behavior on the Internet</p>
+  </span>
+  
+</div>
+</li></ol>
+
+<h3 class="year">2024</h3>
+<ol class="bibliography"><li>
+
+<div id="ware-thesis">
+  
+    <span class="title">PhD Thesis: Battle for Bandwidth: On The Deployability of New Congestion Control Algorithms</span>
+    <span class="author">
+      
+    </span>
+
+    <span class="periodical">
+    
+    
+      2024
+    
+    </span>
+  
+
+  <span class="links">
+  
+  
+  
+  
+    [<a href="https://www.cs.cmu.edu//~rware/assets/pdf/CMU-CS-24-135.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+</div>
+</li>
+<li>
+
+<div id="ferreira-imc-2024">
+  
+    <span class="title">Reverse-Engineering Congestion Control Algorithm Behavior</span>
+    <span class="author">
+      
+        
+          
+            
+              Ferreira, Margarida,
+            
+          
+        
+      
+        
+          
+            <em>Ware, Ranysha</em>,
+          
+        
+      
+        
+          
+            
+              Kothari, Yash,
+            
+          
+        
+      
+        
+          
+            
+              Lynce, Inês,
+            
+          
+        
+      
+        
+          
+            
+              Martins, Ruben,
+            
+          
+        
+      
+        
+          
+            
+              Narayan, Akshay,
+            
+          
+        
+      
+        
+          and
+          
+            
+              Sherry, Justine
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In Proceedings of the 2024 ACM on Internet Measurement Conference</em>
+    
+    
+      2024
+    
+    </span>
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abstract</a>]
+  
+  
+  
+  
+    [<a href="https://www.cs.cmu.edu//~rware/assets/pdf/ferreira-imc-2024.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>The rise of proprietary and novel congestion control algorithms (CCAs) opens questions about the future of Internet utilization, latency, and fairness. However, fully analyzing how novel CCAs impact these properties requires understanding the inner workings of these algorithms. We thus aim to reverse-engineer deployed CCAs’ behavior from collected packet traces to facilitate analyzing them. We present Abagnale, a program synthesis pipeline that helps users automate the reverse-engineering task. Using Abagnale, we discover simple expressions capturing the behavior of 9 of the 16 CCAs distributed with the Linux kernel and analyze 7 CCAs from a graduate networking course.</p>
+  </span>
+  
+</div>
+</li>
+<li>
+
+<div id="ware-sigcomm-2024">
+  
+    <span class="title"> CCAnalyzer: An Efficient and
+Nearly-Passive Congestion Control Classifier</span>
+    <span class="author">
+      
+        
+          
+            <em>Ware, Ranysha</em>,
+          
+        
+      
+        
+          
+            
+              Philip, Adithya Abraham,
+            
+          
+        
+      
+        
+          
+            
+              Hungria, Nicholas,
+            
+          
+        
+      
+        
+          
+            
+              Kothari, Yash,
+            
+          
+        
+      
+        
+          
+            
+              Sherry, Justine,
+            
+          
+        
+      
+        
+          and
+          
+            
+              Seshan, Srinivasan
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In Proceedings of the ACM SIGCOMM 2024 Conference</em>
+    
+    
+      2024
+    
+    </span>
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abstract</a>]
+  
+  
+  
+  
+    [<a href="https://www.cs.cmu.edu//~rware/assets/pdf/ware-sigcomm24.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>We present CCAnalyzer, a novel classifier for deployed Internet congestion control algorithms (CCAs) which is more accurate, more generalizable, and more human-interpretable than prior classifiers. CCAnalyzer requires no knowledge of the underlying CCA algorithms, and it can identify when a CCA is novel - i.e. not in the training set. Furthermore, CCAnalyzer can cluster together servers it believes use the same novel/unknown algorithm. CCAnalyzer correctly identifies all 15 of the default Internet CCAs deployed with Linux, including BBRv1, which no existing classifier can do. Finally, CCAnalyzer can classify server CCAs while being as efficient or better than prior approaches in terms of bytes transferred and runtime. We conduct a measurement study using CCAnalyzer measuring the CCA for 5000+ websites. We find widespread deployment of BBRv1 at large CDNs, and demonstrate how our clustering technique can detect deployments of new algorithms as it discovers BBRv3 although BBRv3 is not in its training set.</p>
+  </span>
+  
+</div>
+</li>
+<li>
+
+<div id="philip-sigcomm-2024">
+  
+    <span class="title">Prudentia: Findings of an Internet Fairness Watchdog</span>
+    <span class="author">
+      
+        
+          
+            
+              Philip, Adithya Abraham,
+            
+          
+        
+      
+        
+          
+            
+              Athapathu, Rukshani,
+            
+          
+        
+      
+        
+          
+            <em>Ware, Ranysha</em>,
+          
+        
+      
+        
+          
+            
+              Mkocheko, Fabian Francis,
+            
+          
+        
+      
+        
+          
+            
+              Schlomer, Alexis,
+            
+          
+        
+      
+        
+          
+            
+              Shou, Mengrou,
+            
+          
+        
+      
+        
+          
+            
+              Meng, Zili,
+            
+          
+        
+      
+        
+          
+            
+              Seshan, Srinivasan,
+            
+          
+        
+      
+        
+          and
+          
+            
+              Sherry, Justine
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In Proceedings of the ACM SIGCOMM 2024 Conference</em>
+    
+    
+      2024
+    
+    </span>
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abstract</a>]
+  
+  
+  
+  
+    [<a href="https://www.cs.cmu.edu//~rware/assets/pdf/philip-sigcomm24.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>With the rise of heterogeneous congestion control algorithms and increasingly complex application control loops (e.g. adaptive bitrate algorithms), the Internet community has expressed growing concern that network bandwidth allocations are unfairly skewed, and that some Internet services are ’winners’ at the expense of ’losing’ services when competing over shared bottlenecks. In this paper, we provide the first study of fairness between live, end-to-end services with distinct workloads. Rather than focusing on individual components of an application stack (e.g., studying the fairness of an individual congestion control algorithm), we want to provide a direct study over real-world deployed applications. Among our findings, we observe that services typically achieve less-than-fair outcomes: on average, the ’losing’ service achieves only 72% of its max-min fair share of link bandwidth. We also find that some services are significantly more contentious than others: for example, one popular file distribution service causes competing applications to obtain as low as 16% of their max-min fair share of bandwidth when competing in a moderately-constrained setting.</p>
+  </span>
+  
+</div>
+</li></ol>
+
+<h3 class="year">2021</h3>
+<ol class="bibliography"><li>
+
+<div id="philip-imc-2021">
+  
+    <span class="title">Revisiting TCP Congestion Control Throughput Models &amp; Fairness Properties at Scale</span>
+    <span class="author">
+      
+        
+          
+            
+              Philip, Adithya Abraham,
+            
+          
+        
+      
+        
+          
+            <em>Ware, Ranysha</em>,
+          
+        
+      
+        
+          
+            
+              Athapathu, Rukshani,
+            
+          
+        
+      
+        
+          
+            
+              Sherry, Justine,
+            
+          
+        
+      
+        
+          and
+          
+            
+              Sekar, Vyas
+            
+          
+        
+      
+    </span>
+
+    <span class="periodical">
+    
+      <em>In Proceedings of the 21st ACM Internet Measurement Conference</em>
+    
+    
+      2021
+    
+    </span>
+  
+
+  <span class="links">
+  
+    [<a class="abstract">Abstract</a>]
+  
+  
+  
+  
+    [<a href="https://www.cs.cmu.edu//~rware/assets/pdf/philip-imc21.pdf" target="_blank">PDF</a>]
+  
+  
+  
+  
+  
+  
+  </span>
+
+  <!-- Hidden abstract block -->
+  
+  <span class="abstract hidden">
+    <p>Much of our understanding of congestion control algorithm (CCA) throughput and fairness is derived from models and measurements that (implicitly) assume congestion occurs in the last mile. That is, these studies evaluated CCAs in "small scale" edge settings at the scale of tens of flows and up to a few hundred Mbps bandwidths. However, recent measurements show that congestion can also occur at the core of the Internet on inter-provider links, where thousands of flows share high bandwidth links. Hence, a natural question is: Does our understanding of CCA throughput and fairness continue to hold at the scale found in the core of the Internet, with 1000s of flows and Gbps bandwidths? Our preliminary experimental study finds that some expectations derived in the edge setting do not hold at scale. For example, using loss rate as a parameter to the Mathis model to estimate TCP NewReno throughput works well in edge settings, but does not provide accurate throughput estimates when thousands of flows compete at high bandwidths. In addition, BBR - which achieves good fairness at the edge when competing solely with other BBR flows - can become very unfair to other BBR flows at the scale of the core of the Internet. In this paper, we discuss these results and others, as well as key implications for future CCA analysis and evaluation.</p>
+  </span>
+  
+</div>
+</li></ol>
+
 <h3 class="year">2019</h3>
 <ol class="bibliography"><li>
 

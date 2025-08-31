@@ -1,3 +1,45 @@
+@techreport{sherry-tprc-2025,
+  title        = {Congestion Safety Audits for Internet Services},
+  author={Sherry, Justine and Ware, Ranysha and Suizo, Isabel and Seshan, Srinivasan and Philip, Adithya Abraham},
+  year         = {2025},
+  month        = {August},
+  url         = {https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5383658},
+  series = {TPRC-53},
+booktitle = {TPRC-53},
+abstract = {When two family members sharing a home Internet connection simultaneously log in to their
+online applications of choice, how well do their services perform? Will one videogaming child
+experience timeouts and stalls because their sibling is also streaming a popular TV show? Will a
+teleconferencing mother have her calls drop because her spouse chooses just this moment to install
+a software update? When multiple Internet users share a bottleneck network link and overload
+it, the link is said to become congested. Bandwidth – the volume of data that can be transmitted
+per second – must be shared between users. If the link is overloaded, then latency – the amount of
+time it takes one bit of information to travel from sender to receiver – will increase, and packets
+of data can be dropped entirely by the network.
+Most Internet service providers do little to police the impact of congestion between users, simply forwarding packets in the order that they arrive, “first come, first serve.” This policy leaves
+the responsibility of mitigating the effects of congestion to the senders themselves. Internet applications use algorithms called Congestion Control Algorithms (CCAs) to carefully speed up
+and slow down their transmission to avoid congestion. CCAs aim to share available bandwidth
+equally between connections, keep latencies low, and avoid packet loss. Unfortunately, recent research shows that the success of applications in equitably mitigating congestion is mixed at best.
+In a recent study of widely deployed services, it was found that one file-distribution application
+consumed well over its fair share of bandwidth, causing other concurrently running applications
+to obtain as little as 16% of their fair share of bandwidth. In the same study, it was found that a
+popular video streaming service could lead to stalls for competing teleconferencing applications
+(even though other video streaming services did not cause this problem).
+In this paper, we explore how to evaluate whether Internet applications are friendly or fair to
+other applications sharing the same bottleneck link. Taking inspiration from the security community, we propose congestion safety audits, a methodology for analyzing an Internet service
+to identify common-case pitfalls in congested environments. Much like it is impossible to prove
+that an Internet application is “definitely secure”, there exists no approach to guarantee that an
+application will always share bandwidth with other applications or never lead to packet loss or
+stalls for competing traffic. Security audits allow inspectors to perform a suite of tests and evaluations to ensure that due diligence has been carried out to attempt to secure an application. We
+propose that service operators can similarly use a standardized suite of tests to verify that their
+applications meet common-sense guidelines for performance under competition.
+With a standardized process for congestion safety auditing, companies can evaluate their own
+1
+applications to avoid bad publicity. Or, in a world in which regulators take an interest in behavior
+under competition, congestion safety audits might provide validation that operators have followed
+due diligence in avoiding overly aggressive behavior on the Internet},
+  pdf = {ssrn-5383658.pdf}
+}
+
 @techreport{ware-thesis,
   title        = {PhD Thesis: Battle for Bandwidth: On The Deployability of New Congestion Control Algorithms},
   year         = {2024},
