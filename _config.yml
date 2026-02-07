@@ -1,4 +1,4 @@
-# -----------------------------------------------------------------------------
+#-----------------------------------------------------------------------------
 # Site settings
 # -----------------------------------------------------------------------------
 name: Ranysha Ware
@@ -97,7 +97,7 @@ scholar:
 
   last_name: Ware
 
-  style: https://raw.githubusercontent.com/citation-style-language/styles/master/acm-sig-proceedings-long-author-list.csl
+  style: _styles/acm-sig-proceedings-long-author-list.csl
   locale: en
 
   sort_by: year

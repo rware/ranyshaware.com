@@ -4,6 +4,7 @@
 .DS_store
 .ruby-version
 Gemfile.lock
+vendor/
 *.*~
 .#*
 \#*
