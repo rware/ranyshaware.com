@@ -117,6 +117,9 @@ collections:
       layout: post
     output: true
     permalink: /publications/:path
+  teaching:
+    output: true
+    permalink: /teaching/:path/
 
 news_limit: 5
 news_scrollable: true
@@ -183,7 +186,7 @@ scholar:
   style: _styles/acm-sig-proceedings-long-author-list.csl
   locale: en
 
-  source: /_bibliography/
+  source: /_publications/
   bibliography: papers.bib
   bibliography_template: bib
   
