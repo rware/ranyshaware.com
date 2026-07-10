@@ -37,6 +37,7 @@ $viewport-medium: 48em;
 $viewport-large: 64em;
 
 // Colors
+$swatred:           #A11833 !default;
 $red:               #FF3636 !default;
 $red-1:             #f95020 !default;
 $orange:            #F29105 !default;
@@ -70,14 +71,14 @@ $darken-2:          rgba(#000,.125) !default;
 $darken-3:          rgba(#000,.25) !default;
 $darken-4:          rgba(#000,.5) !default;
 
-$theme-color:       $purple;
+$theme-color:       $swatred;
 $code-color:        $dark-gray;
 $text-color:        $mid-gray;
 $background-color:  white;
 
 // Links
-$link-color:        $theme-color;
-$link-hover-color:  darken($theme-color, 40%);
+$link-color:        $swatred;
+$link-hover-color:  darken($swatred, 40%);
 
 // Breakpoints
 $breakpoint-md: '(min-width: 52em)';

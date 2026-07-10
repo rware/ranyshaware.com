@@ -1,13 +1,13 @@
 ---
 layout: about
 permalink: /
-title: <strong>Dr. Ranysha Ware</strong> 
+title: <strong>Dr. Ranysha Ware</strong>
 description: <a href="https://www.cs.swarthmore.edu">Swarthmore College</a>. Teaching the youth.
 
 profile:
   align: left
-  image: ranysha_ware_thumbnail.jpeg 
-  
+  image: ranysha_ware_thumbnail.jpeg
+
 news: true
 social: true
 teaching: true
@@ -23,4 +23,4 @@ I earned my M.S. in Computer Science from [University of Massachusetts Amherst](
 
 My dissertation won the [SIGCOMM Doctoral Dissertation Award](https://www.sigcomm.org/awards/sigcomm-doctoral-dissertation-award). In addition, I was a [Facebook Emerging Scholar](https://research.fb.com/programs/emerging-scholars/), a two-time receipient of the [National GEM Consortium Fellowship](http://www.gemfellowship.org/) and was named one of [SUNY New Paltz's 40 under Forty Alumni](http://www.newpaltz.edu/alumni/40underforty/) in 2017.
 
-Here is my [CV](https://www.cs.cmu.edu/~rware/assets/pdf/ranysha-ware-cv.pdf).
+Here is my [CV](https://www.cs.swarthmore.edu/~rware/assets/pdf/ranysha-ware-cv.pdf).

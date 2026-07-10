@@ -1,3 +1,60 @@
+@inproceedings{ware-sigcomm-2026,
+author = {Ranysha Ware and  Haochen Zhang and Isabel Suizo and Srinivasan Seshan and Justine Sherry},
+title = {Improving Evaluation of Heterogeneous Congestion Control
+Algorithm Interactions},
+year = {2026},
+isbn = {979-8-4007-2467-1/26/08},
+publisher = {Association for Computing Machinery},
+address = {Denver, CO, USA},
+url = {https://doi.org/10.1145/3789240.3829156},
+doi = {10.1145/3789240.3829156},
+booktitle = {Proceedings of the ACM SIGCOMM 2024 Conference},
+numpages = {12},
+keywords = {ongestion control, fairness, harm, network evaluation methodology, genetic algorithms},
+location = {Denver, CO, USA},
+series = {SIGCOMM '26},
+pdf = {ware-sigcomm26.pdf},
+abstract = {A critical part of new congestion control algorithm (CCA) pro-
+posals is an evaluation that a new CCA will reasonably share with
+already widely-deployed CCAs. However, the methodology for
+this evaluation is both inconsistent and inefficient due to the com-
+plexity of inter-CCA interactions under highly diverse network
+settings. We address these challenges by developing new metrics
+for evaluating fairness, developing an algorithm for determining
+when experiments converge, and applying this methodology to au-
+tomated evaluation tool Mahak. In addition, we present HarmGen,
+a new tool that can efficiently explore a large search space using a
+genetic algorithm, to find network settings and workloads where
+there are poor interactions between heterogeneous CCAs. We show
+that with an identical budget of 300 experiments, HarmGen outper-
+forms hill climbing and random search, and finds high harm values
+similar to a parameter sweep of 3500 experiments. With Mahak and
+HarmGen, we identify trends in BBR’s evolution as well as issues
+with new L4S deployments.}
+}
+
+
+@inproceedings{kaneria-conext-2025,
+    author = {Kaneria, Darshil D. and Ware, Ranysha and Seshan, Srinivasan},
+    title = {VCCAnalyzer: Identifying Congestion Control Algorithms used by Video Streaming Services},
+    year = {2025},
+    issue_date = {December 2025},
+    publisher = {Association for Computing Machinery},
+    address = {New York, NY, USA},
+    volume = {3},
+    number = {CoNEXT4},
+    series = {CoNEXT '25},
+    url = {https://doi.org/10.1145/3768979},
+    doi = {10.1145/3768979},
+    abstract = {CCAnalyzer is a recent proposal for a congestion control algorithm (CCA) classifier to measure the deployment of congestion control algorithms in the Internet today by creating a controlled bottleneck and monitoring bottleneck queue occupancy between third-party websites and a controlled receiver. However, this work was designed for web traffic, whereas most internet traffic today is video streaming. Video streaming applications pose additional challenges in CCA classification due to the interactions between adaptive bitrate (ABR) algorithms and CCAs. In this work, we present VCCAnalyzer, which addresses these challenges by carefully selecting bottleneck bandwidth rates to minimize ABR interference and applying interpolation and smoothing techniques to create classifiable queue occupancy traces. VCCAnalyzer achieves 100\% accuracy, higher accuracy than other approaches in video classification. To demonstrate the efficacy of VCCAnalyzer, we conduct a measurement study examining the CCA deployment across major streaming platforms, including Disney+, Hulu, Twitch, and other commonly visited websites. Our findings reveal some variations in congestion control strategies between these services. Our results demonstrate that VCCAnalyzer can effectively classify CCAs in video environments.},
+    booktitle={Proceedings of the ACM on Networking},
+    month = nov,
+    articleno = {32s},
+    numpages = {11},
+    keywords = {congestion control, network analysis, video streaming},
+    pdf = {kaneria-conext2025.pdf},
+    }
+
 @techreport{sherry-tprc-2025,
   title        = {Congestion Safety Audits for Internet Services},
   author={Sherry, Justine and Ware, Ranysha and Suizo, Isabel and Seshan, Srinivasan and Philip, Adithya Abraham},
@@ -47,7 +104,32 @@ due diligence in avoiding overly aggressive behavior on the Internet},
   address      = {Pittsburgh, PA},
   url         = {https://reports-archive.adm.cs.cmu.edu/anon/2024/CMU-CS-24-135.pdf},
   institution       = {Carnegie Mellon University},
-  pdf =  {CMU-CS-24-135.pdf}
+  pdf =  {CMU-CS-24-135.pdf},
+  abstract = {The Internet has become the central source of information and communication in
+modern society. Congestion control algorithms (CCAs) are critical for the stability of the
+Internet: ensuring that users can fairly and e ciently share the network. Over the past
+30 years, researchers and Internet content providers have proposed and deployed dozens
+of new CCAs designed to keep up with the growing demands of faster networks, diverse
+applications, and mobile users. Without tools to understand this growing heterogeneity in
+CCAs deployed on the Internet, the fairness of the Internet is at stake.
+Towards understanding this growing heterogeneity, we develop CCAnalyzer, a tool to
+determine what CCA a particular web service deploys, outperforming previous classi ers
+in accuracy and e ciency. With CCAnalyzer, we show that new CCAs, both known
+and unknown, have widespread deployment on the Internet today, including a recently
+proposed CCA by Google: BBRv1. Next, we develop the  rst model of BBRv1, and prove
+BBRv1 can be very unfair to legacy loss-based CCAs, an alarming  nding given the proli c
+deployment of BBRv1.
+Consequently, we argue the need for a better methodology for determining if a new
+CCA is safe to deploy on the Internet today. We describe how the typical methodology
+testing for equal-rate fairness (every user gets the same bandwidth) is both an unachievable
+goal and ultimately, not the right threshold for determining if a new CCA is safe to deploy
+alongside others. Instead of equal-rate fairness, we propose a new metric we call, harm,
+and argue for a harm-based threshold.
+Lastly, we present RayGen, a novel framework for evaluating interactions between
+heterogeneous CCAs. RayGen uses a genetic algorithm to e ciently explore the large
+state space of possible workloads and network settings when two CCAs compete. With
+a small budget of experiments, RayGen  nds more harmful scenarios than a parameter
+sweep and random search.}
 }
 
 @inproceedings{ferreira-imc-2024,

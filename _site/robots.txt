@@ -1,1 +1,1 @@
-Sitemap: http://localhost:8080/~rware/sitemap.xml
+Sitemap: https://www.cs.swarthmore.edu/~rware/sitemap.xml
